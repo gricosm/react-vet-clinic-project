@@ -6,7 +6,7 @@ const UserCard = (props) => {
         <div class='card'>
             <title class='title'>{props.lastname}</title>
             <a class='subtitle'>{props.name}</a>
-            <a>{props.mail} </a>
+            <a>{props.mail}</a>
         </div>
     )
 

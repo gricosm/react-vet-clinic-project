@@ -1,4 +1,4 @@
-import USER_LOG_IN from '../actions/types'
+import { USER_LOG_IN } from '../actions/types'
 
 const loginInitialState = null;
 

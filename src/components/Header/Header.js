@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
         <>
             <nav class='header-nav'>
-                <Menu>
+                <div>
                     <NavLink to = '/Login' activeStyle>
                         Login
                     </NavLink>
@@ -21,7 +21,7 @@ const Header = () => {
                     <NavLink to = '/Price' activestyle>
                         Precios
                     </NavLink>
-                </Menu>
+                </div>
                 <NavLink to='/' >
                     <img src='#' />
                 </NavLink>
