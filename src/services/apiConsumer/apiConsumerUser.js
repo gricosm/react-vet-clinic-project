@@ -2,7 +2,7 @@ export const APIConsumerUser = {
 
     registerUser: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/user/', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/user/', {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: data
@@ -17,7 +17,7 @@ export const APIConsumerUser = {
 
     loginUser: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/user/login', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/user/login', {
                 method: "POST",
                 header: {'Content-Type': 'application/json'},
                 body: data
@@ -33,7 +33,7 @@ export const APIConsumerUser = {
 
     findUser: async (data) => {
         try {
-            let res = await fetch('http://localhost:0420/user/', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/user/', {
                 method: "GET",
                 body: data
             })
@@ -44,7 +44,7 @@ export const APIConsumerUser = {
 
     findAllUser: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/user/all', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/user/all', {
                 method: "GET",
                 body: data
             })
@@ -55,7 +55,7 @@ export const APIConsumerUser = {
 
     deleteUser: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/user/', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/user/', {
                 method: "DELETE",
                 body: data
             })

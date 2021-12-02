@@ -2,7 +2,7 @@ export const APIConsumerAppointment = {
 
     createAppointment: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/appointment', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/appointment', {
                 method: "POST",
                 body: data
             })
@@ -16,7 +16,7 @@ export const APIConsumerAppointment = {
 
     searchAppointment: async (data) =>{
         try{
-            let res = await fetch('http://localhost:0420/appointment', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/appointment', {
                 method: "GET",
                 body: data
             })
@@ -30,7 +30,7 @@ export const APIConsumerAppointment = {
 
     searchAllAppointment: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/appointment/all', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/appointment/all', {
                 method: "GET",
                 body: data
             })
@@ -44,7 +44,7 @@ export const APIConsumerAppointment = {
 
     deleteAppointment : async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/appointment', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/appointment', {
                 method: "DELETE",
                 body: data
             })

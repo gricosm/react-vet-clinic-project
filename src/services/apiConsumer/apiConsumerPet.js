@@ -2,7 +2,7 @@ export const APIConsumerPet = {
 
     registerPet: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/pet',{
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/pet',{
                 method: "POST",
                 body: data
             })
@@ -16,7 +16,7 @@ export const APIConsumerPet = {
 
     searchPet: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/pet', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/pet', {
                 method: "GET",
                 body: data
             })
@@ -27,7 +27,7 @@ export const APIConsumerPet = {
 
     searchAllPet: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/pet/all', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/pet/all', {
                 method: "GET",
                 body: data
             })
@@ -38,7 +38,7 @@ export const APIConsumerPet = {
 
     deletePet: async (data) => {
         try{
-            let res = await fetch('http://localhost:0420/pet', {
+            let res = await fetch('https://backend-vet-clinic.herokuapp.com/pet', {
                 method: "DELETE",
                 body: data
             })
