@@ -7,6 +7,7 @@ const UserPage = (props) => {
         <div class='container'>
             <UserCard />
         </div>
+        
     )
 
 }
